@@ -1,0 +1,123 @@
+.w-editpsg{
+	background:#eee;
+	height:100%;
+	.weui_cell_warn .weui_cell_ft{
+		// display:none;
+	}
+}
+.w-editpsg .vux-flexbox.w-before .w-item1 ,
+.w-editpsg .vux-flexbox.w-before .w-item2 ,
+// .w-editpsg .vux-flexbox.w-before .w-item3 ,
+{
+	// height:4rem;
+	border:1px solid #ccc;
+	background:#fff;
+	margin-bottom:2rem;
+}
+.w-item1{
+	.first-name{
+		color:#ccc;
+		font-size: 80%;
+	}
+	.w-editpsg-explain{
+		color:#37f;
+		font-size:80%;
+	}
+	.weui_cell_warn .weui_cell_ft{
+		display:none;
+	}
+}
+.w-Names{
+	padding-bottom: 2rem;
+	.weui_cell{
+		padding-right: 0;
+		padding-bottom:0;
+		.weui_cell_bd{
+			border-bottom: 1px solid;
+		}
+		.weui_cell_ft{
+			display:none;
+		}
+	}
+	.changeName{
+		span {
+			border:1px solid #37f;
+			padding: 0.2rem 0.2rem;
+			float:left;
+			color:#37f;
+			&.active{
+				background:#37f;
+				color:#fff;
+			}
+		}
+	}
+}
+/* 添加证件部分样式 start*/
+.w-after-credent{
+	padding:1rem;
+	.weui_btn_default{
+		background:#007aff;
+		color:#fff;
+		height:2.5rem;
+	}
+	.vux-flexbox-item{
+		&:first-child{
+			text-align: center;
+		}
+	}
+	.credentErr {
+		border-bottom-color:red;
+		&:after{
+			content:attr(errData);
+			position:absolute;
+			width:100%;
+			bottom:-1.8rem;
+			left:0.5rem;
+			color:red;
+		}
+	}
+	.weui_cell_ft{
+		display:none;
+	}
+}
+/* 添加证件部分样式 end*/
+.w-item3 {
+	.w-add-icon{
+		position:relative;
+		background:none;	
+	}
+	.w-addicon{
+		position: absolute;
+		right:0.8rem;
+		top:-2rem;
+		color:#34cb0b;
+		margin-right:1rem;
+		font-size: 4rem;
+		// text-shadow: 2px 2px #ccc;
+		/* box-shadow: 2px 2px #666; */
+	}
+	.w-editpsg-shadow{
+		box-shadow:0px 10px 5px -10px #666;
+		background: #fff;
+		.w-delicon{
+			color:red;
+			font-size: 3.5rem;
+		}
+	}
+}
+.w-psg-save{
+	.weui_btn{
+		background:#007aff;
+		color:#fff;
+		height:2.5rem;
+	}
+}
+.w-editpsg-tip{
+	p{
+		text-align: left;
+		font-size: 78%;	
+	}
+}
+.w-tip-name .vux-dialog-transition {
+	border-radius: 5px;
+}

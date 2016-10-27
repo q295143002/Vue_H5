@@ -1,0 +1,213 @@
+//========================================index================================
+.w-login-bg{
+	min-height: 100%;
+	min-width: 100%;
+	background:url(../../assets/plane-bg.png) no-repeat;
+	// background-position: left top;
+	background-size: 100% 100%;
+	// background-size: cover; 
+	background-color: #5f97f6;
+	// overflow: hidden;
+}
+.w-login{
+	background-color: #5f97f6;
+	min-width:100%;
+	margin:0;
+	position: absolute;
+	top:0%;
+	.w-login-text{
+		display:block;
+		color:#fff;
+		height:2.4rem;
+		border:none;
+		border-bottom: 2px solid #fff;
+		background: none;
+		outline: none;
+		transparent:none;
+	}
+	.w-login-btn{
+		// width:50%;
+		color:#37f;
+		height:2.6rem;
+		line-height: 2.6rem;
+		margin-top:3rem;
+		font-size:1.4rem;
+	}
+}
+.w-welcome{
+	font-size:2.2rem;
+	height:5rem;
+	line-height: 5rem;
+	text-align:center;
+	color:#9ec3fb;
+}
+.w-login ::-webkit-input-placeholder { /* Chrome/Safari/Opera */
+  color: #fff;
+  transition:all 0.2s;
+  transform:scale(1) translate(0 ,0) ;
+}
+.w-login :focus::-webkit-input-placeholder{
+  // color: transparent;
+  transition:all 0.2s;
+  transform:scale(0.7) translate(-17% ,-22px) ;
+}
+.w-line:focus{
+	transition:all 0.6s;
+	border-bottom-color:blue; 
+}
+.w-line{
+	width:16.5rem;
+	height:1.7rem;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	border-bottom: 1px solid #fff;
+	color:#fff;
+	// padding: 1.5rem 0 0;
+	padding-left:0;
+	font-size: 1rem;
+}
+.w-cover{
+	height:100%;
+	width:100%;
+	background: #000;
+	opacity: 0.4;
+	position: absolute;
+	top:0;
+}
+.w-group{
+	width:16.6rem;
+	height: 20rem;
+	// border:1px solid red;
+	// height:40%;
+	margin:auto;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	// margin-top:5rem;
+}
+.placeholder1{
+	position: absolute;
+	top:0;
+	left:0;
+	color:#fff;
+	transform:scale(0.7);
+}
+.placeholder2{
+	position: absolute;
+	top:3rem;
+	left:0;
+	color:#fff;
+	transform:scale(0.6);
+}
+//toast=========================================>>>
+.vux-toast .weui_toast_forbidden .weui_icon_toast:before {
+  color:orange;
+}
+.vux-toast .weui_toast_forbidden{
+	color:#fff;
+	font-family: "Microsoft YaHei"
+}
+//toast=========================================<<<
+
+//login page  x-input样式覆盖=========================================>>>
+.w-login {
+	div.weui_cells{
+		background:none;
+	}
+	div.weui_cell:before,div.weui_cells:after,div.weui_cells:before{
+		border:none;
+	}
+	div.weui_cells_title{
+		font-size:2.5rem;
+		height:4rem;
+		line-height: 4rem;
+		text-align:center;
+	}
+	.weui_icon_warn:before{
+		display: none;
+	}
+	i.weui_icon.weui_icon_warn:before{
+		display: none;
+	}
+	input.weui_input{
+		color:#fff;
+	}
+	div.weui_cell_primary{
+		padding-top:0.4rem;
+	}
+}
+//x-input样式覆盖=========================================<<<
+// =================test================================>>>>
+.enterTest,.escTest,.getUserInfo{
+	position:absolute;
+	z-index: 10;
+	right:0;
+	top:0;
+	// background: #277af6;
+	background: none;
+	width:2rem;
+	margin:0;
+}
+.enterTest{
+	right:2.8rem;
+}
+.getUserInfo{
+	right:6rem;
+	width:5rem;
+}
+// =================test==============================<<<<<
+//===========================forgrtPsd=====================
+.w-forget-psd{
+	text-align: center;
+	color:#fff;
+}
+.w-forget {
+	input {
+		background:transparent;
+		border:none;
+		outline:none;
+		border-bottom:1px solid #ccc;
+		width:100%;
+		height:3rem;
+		padding-left: 3px;
+		&:focus{
+			border-bottom-color: #37f;
+			transition:all 0.3s;
+		}
+	}
+	::-webkit-input-placeholder{
+		color:#999;
+	}
+	.getVerifCode{
+		background: #37f;
+		color:#fff;
+		height:2rem;
+		line-height: 2rem;
+		width:100%;
+		text-align: center;
+		display: block;
+		border-radius: 2px;
+		&.active{
+			background:#666;
+		}
+	}
+
+}
+// .w-forget input {
+// 	background:transparent;
+// 	border:none;
+// 	outline:none;
+// 	border-bottom:1px solid #ccc;
+// 	width:100%;
+// 	&:focus{
+// 		border-bottom-color: #37f;
+// 		transition:all 0.3s;
+// 	}
+// 	&:-webkit-input-placeholder{
+// 		color:red;
+// 	}
+// }
+

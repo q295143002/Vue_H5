@@ -1,0 +1,152 @@
+body{
+	-webkit-user-select: none;
+}
+@themeblue:#1885fc;
+.theme-color-red {
+	color: #ef4f4f
+}
+.theme-color-blue{
+	color:@themeblue
+}
+.theme-color-green{
+	color:#42b983
+}
+.theme-bg-blue{
+	background-color:@themeblue	
+}
+.theme-btn-yellow{
+	background-color: #ff8b04;
+	color:#fff;
+	border-radius: 2px;
+	&:active{
+		background-color: #fba23a;
+	}
+}
+.theme-btn-blue{
+	background-color: @themeblue;
+	color:#fff;
+	border-radius: 2px;
+	&:active{
+		background-color: #449cfd;
+	}
+}
+.theme-btn-white{
+	background-color: #fff;
+	color:@themeblue;
+	border-radius: 2px;
+	&:active{
+		background-color: #f1f1f1;
+	}
+}
+/* weui调整 */
+.vux-timeline-item-head, 
+.vux-timeline-item-head-first {
+	z-index:0
+}
+div.vux-header{
+  	background-color: #fff;
+  	.vux-flexbox-item {
+		color: @themeblue;
+	}
+	.vux-header-title{
+		color: @themeblue;
+	}
+}
+button.weui_btn_primary {
+
+	background-color: @themeblue;
+	&:not(.weui_btn_disabled):active{
+		background-color: darken(@themeblue,10%);
+	}
+}
+button.weui_btn_cancel {
+	background-color: #999;
+	&:not(.weui_btn_disabled):active{
+		background-color: darken(#999,10%);
+	}	
+}
+div.vux-tab-ink-bar{
+	&.vux-tab-ink-bar-transition-backward {
+		background: @themeblue!important;	
+	}
+	&.vux-tab-ink-bar-transition-forward {
+		background: @themeblue!important;		
+	}
+}
+div.vux-tab-item.vux-tab-selected{
+	color:@themeblue!important;
+}
+div.vux-button-group > a.vux-button-group-current, .vux-button-group > a.hover, .vux-button-group > a:active {
+	background: @themeblue !important;
+	border-color: @themeblue !important;
+}
+div.weui_tabbar{
+	&:before{
+		content: none;
+	}
+	.weui_tabbar_item.active{
+		color:@themeblue
+	}
+}
+div.picker-dialog {
+	background: #f1f1f1;
+}
+.vux-toast .weui_toast_forbidden i.weui_icon_toast:before {
+	color:#fff
+}
+.weui_cell .weui_icon_clear:before{
+	font-size: 18px
+}
+a.weui_search_cancel{
+	color:@themeblue
+}
+div.inline-calendar td.current > span {
+	background-color: @themeblue;
+}
+div.inline-calendar td.is-today{
+	color:#000
+}
+div.vux-button-group {
+	a:first-child{
+		border-radius: 8px 0 0  8px;
+	}
+	a:last-child{
+		border-radius: 0 8px 8px 0;
+	}
+}
+div.weui_toast.weui_toast_text{
+	min-height:0;
+}
+a.weui_btn_dialog.primary{
+	color:@themeblue
+}
+.icon_color_blue.weui_icon_download:before, .icon_color_blue.weui_icon_info_circle:before{
+	color:@themeblue
+}
+.weui_icon_info_circle.disable:before{
+	color: #c9c9c9
+}
+input.weui_switch:checked {
+	border-color:@themeblue;
+	background-color:@themeblue
+}
+i.weui_icon_success:before {
+	color:@themeblue
+}
+div.dp-header .dp-item {
+	color: @themeblue
+}
+div.dp-header .dp-right {
+	text-align: right;
+	margin-right: 1rem;
+}
+div.dp-header .dp-left {
+	margin-left: 1rem;
+	text-align: left;
+}
+a.picker-mask{
+	transition: none
+}
+div.vux-fade-transition {
+	transition: none
+}

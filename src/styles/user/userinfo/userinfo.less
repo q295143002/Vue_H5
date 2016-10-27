@@ -1,0 +1,159 @@
+//==============================userinfo=================================
+.w-userinfo-back {
+	background:none;
+	width:100%;
+}
+.w-userinfo-input{
+	width:80%;
+	margin-left:10%;
+	border:none;
+	border-bottom:1px solid #666;
+	height:4rem;
+	outline:none;
+}
+.w-userinfo{
+	.w-userinfo-shadow{
+		box-shadow:0px 10px 5px -10px #666;
+		background: #fff;
+		margin-bottom:2rem;
+	}
+	.w-userinfo-item{
+		height:10rem;
+	}
+}
+p.w-info-top{
+	background: #fff;
+}
+
+.w-info-head{
+	/*background:red;*/
+	background:-webkit-linear-gradient(-60deg,rgb(206,50,51) 160px,rgb(194,0,0) 161px);
+	color:#fff;
+}
+.w-info-logo{
+	width:4rem;
+	height:4rem;
+	margin:auto;
+	text-align: center;
+	line-height: 4rem;
+	border:1px solid #fff;
+	border-radius: 50%;
+	/*background:#fff;*/
+	padding:0.5rem;
+}
+.w-info-name{
+	text-align: center;
+}
+.w-info-addCredent{
+	height:6rem;
+	background-color: none;
+	margin:1rem 0;
+	// padding-left: 1rem;
+}
+.w-info-addCredent-item{
+	text-align: left;
+	
+}
+.w-credent-add-icon{
+	position:relative;
+	// height:5rem;
+	background:none;
+}
+.w-info-credentT{
+	position: absolute;
+	right:1rem;
+	top:-2rem;
+	color:#34cb0b;
+	margin-right:1rem;
+	font-size: 5rem;
+	text-shadow: 2px 2px #ccc;
+	/*box-shadow: 2px 2px #666;*/
+}
+.w-info-credentF{
+	color:red;
+	font-size: 4rem;
+}
+.w-userinfo button.w-info-btn{
+	border:none;
+	background:#2196f3;
+	height:3rem;
+	color:#fff;
+	width:94%;
+	margin-left:3%;
+	margin-top:5rem;
+}
+div.w-info-free{
+	position:absolute;
+	left:0;top:0;bottom:0;right:0;
+	margin:auto;
+	box-sizing:border-box;
+	width:80%;
+	height:18rem;
+	overflow-y: auto;
+	margin-left:10%;
+	background:#fff;
+	border-radius: 5px;
+	padding:1rem;
+}
+div.w-info-free .w-info-title{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.w-info-item{
+	color:#666;
+}
+.w-info-top-title{
+	padding-left:1rem;
+}
+.w-info-top{
+	color:#666;
+	padding-left:1rem
+}
+.w-order-loading{
+	text-align: center;
+}
+div.w-loading-atyle{
+	text-align: center;
+	height:3rem;
+	line-height: 3rem;
+}
+.w-userinfo div.weui_cell_ft{
+	display:none;
+}
+//=========================================添加证件======================
+div.weui_cells:before,
+div.weui_dialog_ft:after,
+div.weui_dialog_confirm .weui_dialog_ft a:after{
+	border:none;
+}
+div.w-add-Crendent div.vux-dialog-transition div.weui_dialog_ft a{
+	color:#37f;
+	font-weight: bold;
+}
+div.w-add-Crendent div.vux-dialog-transition .credentErr{
+	border-bottom-color:red;
+	&:after{
+		content:attr(errData);
+		position:absolute;
+		width:100%;
+		bottom:-1.8rem;
+		left:0.5rem;
+		color:red;
+	}
+}
+div.w-add-Crendent{
+	div.weui_cell{
+		border-bottom: 1px solid #ccc;
+		height:3rem;
+	}
+	div.vux-dialog-transition{
+		height:20rem;
+	}
+	div.weui_dialog_ft{
+		top:2rem;
+	}
+	.weui_dialog_title {
+	    font-weight: bolder;
+	    font-size: 1.6rem;
+	}
+}

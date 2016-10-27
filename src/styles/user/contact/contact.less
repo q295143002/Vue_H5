@@ -1,0 +1,219 @@
+.w-contact{
+  top:80px;
+  left:0;
+  height:86%;
+  width:100%;
+  overflow:auto;
+}
+.w-contact-head {
+	position: fixed;
+	top:0;
+	// top:-10px;
+	height:4rem;
+	z-index: 2;
+}
+.vux-header.w-contact-top {
+	padding:0;
+	height:4rem;
+	line-height: 4rem;
+	color:#fff;
+	padding-left:1rem;
+	background-color: #007aff;
+	span {
+		font-size: 1.5rem;
+	}
+}
+.w-delete-tip {
+	// padding-top:4rem;
+	color:#999;
+	font-size: 0.8rem;
+	p {
+		padding-left: 1rem;
+	}
+}
+.w-add-contact{
+	margin-top:1rem;
+}
+.w-contact-icon {
+	float:left;
+}
+.w-contact-icon1{
+	&:before{
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    width:2.5rem;
+    height:2.5rem;
+		content:attr(data);
+    color:#fff;
+    background-color:#4a9ef7;
+    border-radius: 50%;
+	}
+}
+.w-contact-icon2{
+  &:before{
+    font-size: 2.5rem;
+    color: #666;
+  }
+}
+.w-contact-list {
+  &:nth-of-type(2n){
+    .w-contact-icon1:before{
+      background-color:#f19ec2;
+    }
+  }
+}
+// .w-contact-icon2:before{
+// 	background-color: #fff;
+// 	font-size: 3rem;
+// 	border-radius: 50%;
+// 	color:#666;
+// 	margin-left: 0.9rem;
+// }
+// .w-contact-icon.weui_icon_circle:before{
+// 	width:2.8rem;
+// 	height:2.8rem;
+// 	border-radius: 50%;
+// 	color:#fff;
+// 	content:attr(data);
+// 	background-color:#4a9ef7;
+// 	line-height: 2.5rem;
+// 	font-size: 1.2rem;
+// 	margin-left: 1rem;
+// }
+// .w-contact .w-contact-list:nth-of-type(2n) .w-contact-icon.weui_icon_circle{
+// 	&:before{
+// 		background:#f19ec2;
+// 	}
+// }
+// .w-contact .vux-flexbox-item {
+// 	padding:0.5rem 0;
+// }
+// .w-contact-title {
+// 	margin-left: 5rem;
+// 	box-sizing: border-box;
+// 	// color:#333;
+// }
+// .w-contact-tel {
+// 	margin-left: 5rem;
+// 	color:#666;
+// }
+// .w-contact .vux-flexbox-item:nth-child(2n) .w-contact-item{
+// 	&:after{
+// 		background:#f19ec2;
+// 	}
+// }
+.w-contact-add{
+	font-size: 3rem;
+	color:red;
+	position: absolute;
+	bottom:2rem;
+	right:2rem;
+	// box-shadow: 3px 3px 6px #666;
+}
+.w-contact-err{
+	height:1.5rem;
+	color:#f00;
+}
+.w-contact-input,.w-contact-err{
+	width:80%;
+	margin-left:10%;
+	border:none;
+	padding-left:1rem;
+}
+.w-contact-input{
+	border-bottom:1px solid #ccc;
+	outline: none;
+	padding-left:1rem;
+	height:2.5rem;
+}
+.w-contact-input:focus{
+	border-color:#277af6;
+	transition:all 0.5s;
+}
+.w-contact button.weui_btn, input.weui_btn{
+	width:80%;
+	margin-left:10%;
+}
+button.w-contact-btn{
+	height:2.5rem;
+	background:#277af6;
+	color:#fff;
+	line-height: 2.5rem;
+	margin-top:4rem;
+	
+}
+.w-contact .vux-flexbox.vux-flex-col {
+	.vux-flexbox-item {
+		border-bottom: 1px solid #edebeb;
+	}
+}
+.w-contact .vux-header .vux-header-left .vux-header-back {
+  height:2rem;
+  line-height: 2rem;
+  padding-left:2rem;
+  font-size: 1.5rem;
+}
+.w-contact .vux-header .vux-header-left .vux-header-back:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border:none;
+  z-index: 2
+}
+.w-returnback {
+	position: absolute;
+	top:1rem;
+	left:1rem;
+	color:#fff;
+}
+.w-contact-ok{
+	margin-right: 2rem;
+	position: absolute;
+	top:1rem;
+	right:0;
+	color:#fff;
+	
+}
+.w-scrolll-box{
+	width:140%;
+}
+.w-scrolll-box2{
+	width:100%;
+}
+.w-contact-del {
+	width:24%;
+	height:100%;
+	display:block;
+	height:4rem;
+	line-height: 4rem;
+	text-align: center;
+	border-left:1px solid #ccc;
+}
+.w-editContact .vux-flexbox .vux-flexbox-item.addErr{
+	border-bottom-color:red;
+	position: relative;
+	&:after{
+		content:attr(errData);
+		position:absolute;
+		bottom:-1.8rem;
+		left:1rem;
+		color:red;
+		font-size:90%;
+	}
+}
+.w-editContact .weui_cell_ft{
+	display:none;
+}
+.w-add {
+	position:fixed;
+	bottom:2rem;
+	right:2rem;
+	color:red;
+}
+.w-add-icon{
+	font-size: 4rem;
+}

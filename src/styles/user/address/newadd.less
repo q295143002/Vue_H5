@@ -1,0 +1,142 @@
+/* .w-newadd.vux-flexbox .vux-flexbox-item{
+	height:4rem;
+	border-bottom:1px solid #ccc;
+	width:90%;
+	padding: 0;
+	.weui_cell{
+		height:4rem;
+		padding:0;
+		.weui_input{
+			height:2rem;
+			padding-top:1rem;
+		}
+	}
+}
+.w-newadd.vux-flexbox .vux-flexbox-item.addErr{
+	border-bottom-color:red;
+	position: relative;
+	&:after{
+		content:attr(errData);
+		position:absolute;
+		bottom:-1.8rem;
+		color:red;
+	}
+}
+.w-newadd.vux-flexbox .vux-flexbox-item:last-child{
+	border-bottom:none;
+	padding-top:4rem;
+	// .w-newadd-btn{
+	// 	background-color: #37f;
+	// 	color:#fff;
+	// 	height:3rem;
+	// }
+}
+.w-newaddress .w-newadd-head.vux-header{
+	background:#37f;
+	height:3.5rem;
+	position: fixed;
+	width:100%;
+	top:0;
+}
+// .w-newaddress .w-newadd.vux-flex-col{
+// 	margin-top:3rem;
+// }
+.w-newadd div.vux-header .vux-header-title{
+	height:4rem;
+	line-height: 4rem;
+}
+.w-newadd .vux-header .vux-header-left{
+	top:1.375rem;
+	a{
+		font-size:1.4rem;
+	}
+}
+.w-newadd-head{
+	height:3rem;
+}
+.w-newadd .weui_check_label {
+	color:red;
+	width:40%;
+	float: left;
+}
+.w-newadd-alert .weui_dialog_hd{
+	height:3rem;
+	padding:0;
+}
+.w-newadd-list.vux-flexbox {
+	max-height:25rem;
+	min-height: 3rem;
+	overflow: auto;
+	.vux-flexbox-item{
+		padding-top:1.5rem;
+	}
+}
+.w-alert-title {
+	position: absolute;
+	box-sizing: border-box;
+	background-color: #fff;
+	top:0.5rem;
+	left:0;
+	color:#2196f3;
+	font-size: 1.8rem;
+	border-bottom:2px solid #2196f3;
+	text-align: left;
+	height:3.5rem;
+	width:100%;	
+	padding-left: 1rem;
+	span {
+		display:none;
+	}
+}
+.w-alert-title.active{
+	color:#666;
+	border-bottom-color:#fff;
+	font-size: 1.2rem;
+	span {
+		float: right;
+		padding: 1rem 2rem 0.5rem;
+		color:#2196f3;
+		font-weight: bold;
+		display: block;
+	}
+}
+.w-newadd-tip {
+	color:red;
+	position:relative;
+	bottom:2.6rem;
+	left:3.5rem;
+	font-size: 1.5rem;
+}
+.w-newadd .weui_cell_ft{
+	display:none;
+} */
+.w-newadd.vux-flexbox{
+	padding: 0 15px;
+	box-sizing: border-box;
+	.vux-flexbox-item{
+		border-bottom: 1px solid #ccc;
+		height:3.5rem;
+		.weui_cell{
+			padding: 5px 0;
+			line-height: 4.5rem;
+		}
+		&.noBottom:last-child{
+			padding-top: 2rem;
+			border-bottom: none;
+		}
+		.weui_cell_ft{
+			display:none;
+		}
+	} 
+}
+.w-newadd.vux-flexbox .vux-flexbox-item.addErr{
+	border-bottom-color:red;
+	position: relative;
+	&:after{
+		content:attr(errData);
+		position:absolute;
+		bottom:-1.4rem;
+		font-size: 80%;
+		color:red;
+	}
+}
