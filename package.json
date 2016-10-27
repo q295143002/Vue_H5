@@ -2,7 +2,7 @@
   "name": "miutrip",
   "version": "1.0.0",
   "description": "test vux",
-  "author": "max <724998589@qq.com>",
+  "author": "max <724998589@qq.com><295143002@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
